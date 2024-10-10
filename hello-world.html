@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #resultInput {
+            margin-top: 20px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .footer {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Two Numbers</h1>
+        <form id="funForm">
+            <label for="numA">Number A:</label>
+            <input type="number" id="numA" name="numA" required>
+            <br>
+            <label for="numB">Number B:</label>
+            <input type="number" id="numB" name="numB" required>
+            <br>
+            <button type="button" onclick="showHelloWorld()">Click Me!</button>
+        </form>
+
+        <input type="text" id="resultInput" placeholder="Result will show here" readonly>
+
+        <div class="footer">
+            <p>Credit: baby x boss</p>
+        </div>
+    </div>
+
+    <script>
+        function showHelloWorld() {
+            document.getElementById('resultInput').value = "Hello World!";
+        }
+    </script>
+</body>
+</html>
